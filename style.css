@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background-color: #e1b0d6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+nav .logo {
+  display: flex;
+  font-size: 2.3rem;
+  align-items: center;
+}
+
+nav .bars-menu {
+  display: none;
+}
+nav .logo h4 {
+  font-family: "Lalezar", cursive;
+}
+
+nav .nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-items .nav-item {
+  padding: 0 1rem;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: #221d3b;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-link:hover {
+  color: #06050e;
+}
+
+.main {
+  background-color: #e9d5e4;
+}
+
+.main-section {
+  max-width: 1366px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.main-section .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section .content h4 {
+  color: #67385c;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.main-section .content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.main-section .content p {
+  color: black;
+  font-size: 1.4rem;
+}
+
+.main-section .content p span.purple {
+  color: #67385c;
+  font-weight: bold;
+}
+
+.main-section form {
+  display: flex;
+}
+.btn {
+  width: 10rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background-color: #d494c5;
+}
+
+.btn:hover {
+  background-color: #926a89;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.main-image img {
+  max-width: 60vh;
+
+}
+
+.newest-fashions {
+  padding-top: 5rem;
+  background-color: #ffffff;
+}
+
+.newest-fashions .fashions-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.fashions-section h4 {
+  color: #754b6b;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.fashions-section .fashions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+
+.fashions .fashion {
+  margin: 2rem 0;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fashion img {
+  margin-bottom: 1rem;
+  max-width: 30vh;
+  padding: 2px;
+}
+
+.fashion img:hover {
+  scale: 1.4;
+  cursor: pointer;
+}
+.fashion h3 {
+  font-size: 1.6rem;
+  color: #7a5471;
+
+}
+
+.fashions-section button {
+  width: 15rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+footer {
+  height: 15vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section .socials {
+  margin-bottom: 1rem;
+}
+.footer-section .socials i {
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.footer-section .socials i:hover {
+  color: #4e3748;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  * {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 1175px) {
+  * {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  * {
+    text-align: center;
+  }
+  .main img {
+    display: none;
+  }
+  .main-section {
+    align-items: center;
+    padding: 2rem 0rem;
+    width: 50%;
+  }
+  .main .btn {
+    align-self: center;
+  }
+  .main .content {
+    margin-top: 2rem;
+  }
+ 
+  .fashions-section h4 {
+    align-self: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-section .content h1 {
+    font-size: 2rem;
+  }
+  .fashions-section {
+    align-items: center;
+  }
+  .fashions-section .fashions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 504px) {
+  .fashions-section .fashions {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  nav .bars-menu {
+    display: block;
+    font-size: 3rem;
+  }
+  nav .nav-items {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #6e659e;
+    padding: 2rem 0;
+  }
+  nav .nav-items .nav-item {
+    margin: 1rem 0;
+  }
+  nav .nav-items .nav-item a {
+    color: white;
+  }
+  nav .nav-items.active {
+    display: flex;
+  }
+}
